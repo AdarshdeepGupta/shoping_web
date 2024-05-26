@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Seller</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <h1>Welcome, <span id="username"></span>!</h1>
+    <button id="addProductBtn">Add Product</button>
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        const username = params.get('username');
+        document.getElementById('username').innerText = username;
+
+        document.getElementById('addProductBtn').addEventListener('click', () => {
+            window.location.href = `add-product.html?username=${username}`;
+        });
+    </script>
+</body>
+</html>
