@@ -15,4 +15,3 @@ The project aims to create a basic online shopping website where users can log i
 - **HTML/CSS/JavaScript**: Front-end languages used for creating the user interface and client-side functionality.
 - **Multer**: Node.js middleware used for handling file uploads.
 - **Body-parser**: Node.js middleware used for parsing incoming request bodies.
-- **Other Node.js Modules**: (List any other Node.js modules used in your project)
